@@ -1,4 +1,4 @@
-require_relative 'boot'
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -28,6 +28,14 @@ module WonderfulEditor
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    config.generators do |g|
+      g.javascripts false
+      g.stylesheets false
+      g.helper false
+      # g.test_framework false
+      g.test_framework :rspec
+    end
 
     # Don't generate system test files.
     config.generators.system_tests = nil
