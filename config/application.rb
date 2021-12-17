@@ -35,11 +35,11 @@ module WonderfulEditor
       g.helper false
       # g.test_framework false
       g.test_framework :rspec,
-                   view_specs: false,
-                   routing_specs: false,
-                   helper_specs: false,
-                   controller_specs: false,
-                   request_specs: true
+                       view_specs: false,
+                       routing_specs: false,
+                       helper_specs: false,
+                       controller_specs: false,
+                       request_specs: true
     end
 
     # Don't generate system test files.
